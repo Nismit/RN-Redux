@@ -1,4 +1,12 @@
-import { INCREMENT, DECREMENT, RESET } from '../constants/index';
+// Action Creators
+
+import { ASYNC_INCREMENT, INCREMENT, DECREMENT, RESET } from '../constants/index';
+
+export const funcAsyncIncrement = () => {
+  return {
+    type: ASYNC_INCREMENT
+  }
+};
 
 export const funcIncrement = () => {
   return {

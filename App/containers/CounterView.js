@@ -20,6 +20,9 @@ export default class CounterView extends Component {
     return (
       <View style={styles.container}>
         <Button
+          title="ASYNC_INCREMENT"
+          onPress={this.props.asyncIncrement}/>
+        <Button
           title="INCREMENT"
           onPress={this.props.increment}/>
         <Text
